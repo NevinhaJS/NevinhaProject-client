@@ -1,4 +1,5 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
+import theme from './theme';
 
 export default createGlobalStyle`
   body {
@@ -12,7 +13,7 @@ export default createGlobalStyle`
           sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      color: #333;
+      color: ${theme.colors.primary};
   }
 
   h1, h2, h3, h4 {

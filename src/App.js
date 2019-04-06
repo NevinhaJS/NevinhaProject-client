@@ -3,9 +3,6 @@ import {ThemeProvider} from 'styled-components';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 
-import Header from './components/AppHeader';
-import Wrapper from './components/Wrapper';
-
 import theme from './static/styles/theme';
 import GlobalStyle from './static/styles/global';
 import {customMaterialTheme} from './static/styles/material-ui';
@@ -22,13 +19,7 @@ class App extends Component {
 
           <ThemeProvider theme={theme}>
             <Fragment>
-
-              <Header />
-
-              <Wrapper>
                 <Routes />
-              </Wrapper>
-
             </Fragment>
           </ThemeProvider>
         </MuiThemeProvider>

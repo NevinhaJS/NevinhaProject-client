@@ -32,6 +32,10 @@ export default class Request {
 		return Request.sendFormData(endpoint, formData, "PUT");
 	}
 	
+	static post(endpoint, formData){
+		return Request.sendFormData(endpoint, formData, "POST");
+	}
+	
 	static sendFormData(endpoint, formData, method){
 		dispatch(toggleLoading({ status: true }));
 

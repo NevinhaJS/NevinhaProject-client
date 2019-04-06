@@ -6,8 +6,8 @@ export default {
     colors: {
         light: '#fff',
         mediumLight: '#c9d2dd',
-        blue: '#0082f3',
-        bgBlue: '#486a9a',
+        primary: '#0082f3',
         dark: '#333',
-    }
+    },
+    background: '#142029'
 }

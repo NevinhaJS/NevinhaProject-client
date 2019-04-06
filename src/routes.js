@@ -1,14 +1,18 @@
 import React, {Fragment} from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import LayoutEntity from './entities/Layouts';
-import Screens from './entities/Screens';
+import Header from './shared-components/AppHeader';
+import Wrapper from './shared-components/Wrapper';
+import AppBuilder from './pages/AppBuilder';
 
 const Root = () => (
     <Router>
         <Fragment>
-            <Route path="/" exact component={LayoutEntity} />
-            <Route path="/screens" component={Screens} />
+            <Header />
+
+            <Wrapper>
+                <Route path="/" exact component={AppBuilder} />
+            </Wrapper>
         </Fragment>
     </Router>
 );
